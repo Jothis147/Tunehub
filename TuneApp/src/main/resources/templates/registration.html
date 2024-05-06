@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<style>
+    body {
+        font-size: 18px; 
+    }
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        font-size: 18px; 
+    }
+</style>
+<body>
+
+	<h2>Registration Form</h2>
+
+	<form action="/register" method="post">
+		<table>
+			<tr>
+				<td><label for="uname" >User Name</label></td>
+				<td><input type="text" name="username" id="uname" placeholder="Enter the Username"></td>
+			</tr>
+			<tr>
+				<td><label for="email" >Email</label></td>
+				<td><input type="text" name="email" id="email" placeholder="Enter the Email"></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password</label></td>
+				<td><input type="password" name="password" id="pass" placeholder="Enter the Password"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label></td>
+				<td><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></td>
+				<td><input type="radio" id="others" name="gender" value="others"><label for="others">Others</label></td>
+			</tr>
+			<tr>
+				<td>Role</td>
+				<td><input type="radio" id="admin" name="role" value="admin"><label for="admin">Admin</label></td>
+				<td><input type="radio" id="customer" name="role" value="customer"><label for="customer">Customer</label></td>
+			</tr>
+			
+			
+			<tr>
+				<td><label for="address">Address</label></td>
+				<td><textarea name="address" id="address" placeholder="Enter your address"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

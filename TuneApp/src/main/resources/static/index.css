@@ -1,0 +1,16 @@
+body {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box {
+    background-color: red;
+    padding: 20px;
+    width: 300px;
+}
+form{
+	justify-content: center;
+}

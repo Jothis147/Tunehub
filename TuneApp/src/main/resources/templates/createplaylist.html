@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="addplaylist" method="post">
+    	<label for="pname">Playlist Name:</label>
+        <input type="text" name="name" id="pname">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr th:each="song : ${songs}">
+                <td><label th:for="${'song_' + song.id}" th:text="${song.name}"></label></td>
+                <td><input type="checkbox" th:id="${'song_' + song.id}" th:name="songs" th:value="${song.id}"></td>
+            </tr>
+            <tr><td><input type="submit" value="ADD SONGS"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
